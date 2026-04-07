@@ -1,8 +1,0 @@
-app_ef/vendor/
-app_ef/tmp/
-app_ef/logs/
-app_ef/node_modules/
-app_ef/config/app_local.php
-.idea/
-.vscode/
-.DS_Store
