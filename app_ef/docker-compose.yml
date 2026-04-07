@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app_ef:/var/www/html
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=mysql://dorian:php1251*@192.168.56.250:3306/db_ef
+      - SECURITY_SALT=__SALT__
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
